@@ -8,7 +8,7 @@ body {
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  width: 98.98vw;
+  width: 99.5vw;
 }
 
 .IconContainer {
@@ -147,6 +147,7 @@ body {
 .TextSheetContainer {
   height: 100%;
 }
+
 .TextSheet {
   text-align: left;
   border: 5px solid white;
@@ -185,4 +186,88 @@ body {
 
 .DownloadIcon {
   transform: scale(1.2);
+}
+
+@media only screen and (max-width: 415px) {
+  .IconContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 0.2rem;
+    max-height: 90vh;
+    width: auto;
+    z-index: 1;
+    overflow-y: auto;
+    position: fixed;
+    left: 20.6rem;
+    top: 4.2rem;
+  }
+
+  .IconContainer::-webkit-scrollbar {
+    width: 5px;
+  }
+
+  .IconContainer::-webkit-scrollbar-thumb {
+    background-color: #d4d4d4;
+    border-radius: 10px;
+  }
+
+  .MainContainer {
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    flex-direction: row-reverse;
+    width: 100%;
+  }
+
+  .DownloadIconContainer {
+    position: fixed;
+    bottom: 35px;
+    left: 35px;
+    width: 1.5rem;
+  }
+
+  .TextSizeIconsContainer {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+  }
+
+  .TextSheetContainer {
+    height: 100%;
+  }
+
+  .TextSheet {
+    text-align: left;
+    border: 5px solid white;
+    height: 62.563rem;
+    width: 18.75rem;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 1px 3px 1px rgba(60, 64, 67, 0.15);
+    padding: 4rem;
+    padding-top: 6rem;
+    padding-left: 2rem;
+    margin-bottom: 4rem;
+  }
+
+  .ZoomDropdown {
+    font-size: 0.9rem;
+    width: 4rem;
+    height: 2.8rem;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: all 0.3s ease;
+    padding-left: 0.2rem;
+  }
+
+  .TextColorInputBox {
+    margin-right: 0.5rem;
+  }
+  .TextFillInputBox {
+    margin-right: 0rem;
+  }
+  
 }
